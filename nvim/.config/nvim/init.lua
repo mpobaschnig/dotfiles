@@ -1,6 +1,8 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
+require("lspconfig").qmlls.setup({})
+
 function Transparent(color)
   color = color or "tokyonight"
   vim.cmd.colorscheme(color)
