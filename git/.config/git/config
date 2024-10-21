@@ -1,0 +1,35 @@
+[alias]
+    lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(black)%s%C(reset) %C(black)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    s = status
+
+[color]
+    ui = auto
+
+[core]
+    editor = nvim
+
+[diff]
+    tool = vscode
+
+[difftool "vscode"]
+    cmd = code --wait --diff --new-window $LOCAL $REMOTE
+
+[merge]
+    tool = vscode
+
+[mergetool "vscode"]
+    cmd = code --wait --new-window $MERGED
+    keepBackup = false
+
+[user]
+    name = Martin Pobaschnig
+    email = mpobaschnig@protonmail.com
+
+[pull]
+    ff = only
+
+[push]
+    autoSetupRemote = true
+
+[remote "origin"]
+    fetch = +refs/pull/*/head:refs/pull/origin/*
