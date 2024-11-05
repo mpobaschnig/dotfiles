@@ -9,3 +9,4 @@ set fish_greeting
 alias lg "lazygit $argv"
 alias nv "nvim $argv"
 alias up "rpm-ostree update && flatpak update -y"
+alias tb "toolbox $argv"
