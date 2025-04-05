@@ -3,7 +3,7 @@
     s = status
 
 [color]
-    ui = auto
+    ui = always
 
 [core]
     editor = nvim
